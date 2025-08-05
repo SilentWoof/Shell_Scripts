@@ -4,7 +4,7 @@ CONFIG_DIR=~/printer_data/config
 BACKUP_DIR="${CONFIG_DIR}_original"
 # Change the repo url to the location of the git repo
 REPO_URL="https://github.com/SilentWoof/Voron_0_2_Orange.git"
-LOG_FILE=~/printer_setup.log
+LOG_FILE=~/klipper_3d_printer_restore.log
 
 echo "---- Starting script at $(date) ----" | tee -a "$LOG_FILE"
 
