@@ -67,3 +67,8 @@ Your Pi Fan Control script should now be installed and running!
 The script contains an uninstaller. To run it use --uninstall:  
   Run:  
   ```sudo pi_fancontrol.sh --uninstall```
+
+## 📚 Credits & Inspiration
+
+This project was inspired by [Howchoo's Raspberry Pi Fan Controller](https://github.com/Howchoo/pi-fan-controller), which introduced a simple and effective way to manage fan speed using GPIO and Python.  
+Huge thanks to the Howchoo team for their original work — this installer builds on their concept by automating setup and integrating systemd for persistent fan control.
