@@ -24,6 +24,7 @@ A Bash-based installer for a Python-powered fan controller on Raspberry Pi, desi
 The fan is controlled via GPIO17 using a transistor switch. This protects the Raspberry Pi and allows it to safely drive the fan.
 
 ![Fan Control Circuit](pi_fancontrol_circuit.png)
+![Fan Control Diagram](pi_fancontrol_diagram.png)
 
 ### 🧩 Circuit Components
 
