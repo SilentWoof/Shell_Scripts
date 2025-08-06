@@ -28,13 +28,13 @@ A personal repository for organizing and managing useful shell scripts. These sc
    git clone https://github.com/SilentWoof/Shell_Scripts.git
 
 2. Navigate to the desired script:
-   cd Shell_Scripts
+   ```cd Shell_Scripts```
 
 3. Make the script executable:
-   chmod +x script_name.sh
+   ```chmod +x script_name.sh```
 
 4. Run the script:
-   ./script_name.sh
+   ```./script_name.sh```
 
 > ⚠️ Some scripts may require root privileges. Use `sudo` where appropriate.
 
