@@ -63,6 +63,7 @@ Follow these steps to install the Pi Fan Control script on your Raspberry Pi:
 Your Pi Fan Control script should now be installed and running!
 
 ## 🗑️ Uninstall
-The script contains an uninstaller. To run it use --uninstall:
-  Run:
+
+The script contains an uninstaller. To run it use --uninstall:  
+  Run:  
   ```sudo pi_fancontrol.sh --uninstall```
