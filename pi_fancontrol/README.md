@@ -41,16 +41,28 @@ The fan is controlled via GPIO17 using a transistor switch. This protects the Ra
 - The Python script reads CPU temperature and toggles GPIO17 accordingly.
 
 ## 🚀 Installation
-Make new file on your Raspberry Pi:
-*nano pi_fancontrol.sh*
-Copy and paste the contents of: 
-https://github.com/SilentWoof/Scripts/tree/main/shell_scripts/pi_fancontrol/pi_fancontrol.sh
-into the new file.
-Make the file execuutable:
-*sudo chmod +x pi_fancontrol.sh*
-Run the installer:
-*sudo ./pi_fancontrol.sh*
+
+Follow these steps to install the Pi Fan Control script on your Raspberry Pi:
+
+1. Create a new script file  
+   Open a terminal and run:  
+   ```nano pi_fancontrol.sh```
+
+2. Copy the script contents  
+   Paste the contents from the following GitHub file into your new script:  
+   https://github.com/SilentWoof/Scripts/tree/main/shell_scripts/pi_fancontrol/pi_fancontrol.sh
+
+3. Make the script executable  
+   Run:  
+   ```sudo chmod +x pi_fancontrol.sh```
+
+4. Execute the installer  
+   Run:  
+   ```sudo ./pi_fancontrol.sh```
+
+Your Pi Fan Control script should now be installed and running!
 
 ## 🗑️ Uninstall
 The script contains an uninstaller. To run it use --uninstall:
-*sudo pi_fancontrol.sh --uninstall*
+  Run:
+  ```sudo pi_fancontrol.sh --uninstall```
