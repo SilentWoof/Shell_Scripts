@@ -1,4 +1,30 @@
 #!/bin/bash
+# ------------------------------------------------------------------------------
+# Script Name: 3d_printer_restore.sh
+#
+# Description:
+# This script automates the restoration of Klipper 3D printer configuration files
+# by backing up the existing configuration directory and replacing it with a fresh
+# clone from a specified Git repository. It performs the following steps:
+#
+#   1. Checks for the existence of the current configuration directory.
+#   2. If found, renames it to preserve the original as a backup.
+#   3. Creates a new, clean configuration directory.
+#   4. Clones the contents of the specified Git repository into the new directory.
+#   5. Logs all actions and timestamps to a log file for traceability.
+#
+# Variables:
+#   CONFIG_DIR   - Path to the current printer configuration directory.
+#   BACKUP_DIR   - Path to store the backup of the original configuration.
+#   REPO_URL     - URL of the Git repository containing the desired configuration.
+#   LOG_FILE     - Path to the log file where script activity is recorded.
+#
+# Usage:
+#   Run this script on a system with Git installed and access to the target repo.
+#   Ensure that the CONFIG_DIR path and REPO_URL are correctly set before execution.
+#
+# Author: SilentWoof (GitHub)
+# ------------------------------------------------------------------------------
 
 CONFIG_DIR=~/printer_data/config
 BACKUP_DIR="${CONFIG_DIR}_original"
