@@ -22,19 +22,22 @@ A personal repository for organizing and managing useful shell scripts. These sc
 - `3d_printer_restore.sh`  
   Restores configuration or services related to a 3D printer setup.
 
+- `setup_testing_venv.sh`  
+  Creates a Python virtual environment (`testing_venv`), sets up working directories, and adds a reusable alias for streamlined activation and navigation.
+
 ## 🚀 Usage
 
-1. Clone the repository:
+1. Clone the repository:  
    git clone https://github.com/SilentWoof/Shell_Scripts.git
 
-2. Navigate to the desired script:
-   ```cd Shell_Scripts```
+2. Navigate to the desired script:  
+   cd Shell_Scripts
 
-3. Make the script executable:
-   ```chmod +x script_name.sh```
+3. Make the script executable:  
+   chmod +x script_name.sh
 
-4. Run the script:
-   ```./script_name.sh```
+4. Run the script:  
+   ./script_name.sh
 
 > ⚠️ Some scripts may require root privileges. Use `sudo` where appropriate.
 
