@@ -17,18 +17,17 @@ else
     echo "[INFO] Alias already exists in .bashrc"
 fi
 
-echo "[SETUP] Adding login message to ~/.bashrc"
+echo "[SETUP] Adding one-time login message to ~/.bashrc"
 LOGIN_MARKER="# >>> testvenv login message >>>"
 if ! grep -Fxq "$LOGIN_MARKER" ~/.bashrc; then
     cat << 'EOF' >> ~/.bashrc
 
 # >>> testvenv login message >>>
-function show_testvenv_info() {
-    local CYAN='\033[0;36m'
-    local NC='\033[0m'  # No Color
+if [[ $- == *i* ]]; then
+    CYAN='\033[0;36m'
+    NC='\033[0m'
     echo -e "\n${CYAN}Test Virtual Environment:${NC} testvenv\n"
-}
-PROMPT_COMMAND="show_testvenv_info"
+fi
 # <<< testvenv login message <<<
 EOF
     echo "[SETUP] Login message added to .bashrc"
